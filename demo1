@@ -1,1 +1,74 @@
-ikuy
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Documents (dev)
+$ git branch
+* dev
+  master
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Documents (dev)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Documents (dev)
+$ git branch main
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Documents (dev)
+$ git init
+Reinitialized existing Git repository in C:/Users/SAIRAM/Documents/.git/
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Documents (dev)
+$ cd ..
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~ (master)
+$ cd Devops
+bash: cd: Devops: No such file or directory
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/SAIRAM/.git/
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~ (master)
+$ git clone https://github.com/741yagna/Devops.git
+Cloning into 'Devops'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~ (master)
+$ cd Devops
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Devops (main)
+$ git branch
+* main
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Devops (main)
+$ git add .
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Devops (main)
+$ git commit -m "first commit"
+[main cfffc1a] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo2.txt
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Devops (main)
+$ git push -f origin main
+info: please complete authentication in your browser...
+
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Devops (main)
+$ git push -f origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/741yagna/Devops.git
+   189ce79..cfffc1a  main -> main
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Devops (main)
+$ ^C
+
+SAIRAM@DESKTOP-KD5HC0U MINGW64 ~/Devops (main)
+$
